@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="container navegacao">
+            <!--
+                container = vai compartilhar com todos e navegacao = será só do nav
+            -->
+            <div id="logo">
+                ecotech
+            </div>
+
+            <button class="botao-menu">
+                ☰
+            </button>
+            <ul class="menu">
+                <li>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a href="#destaques">destaques</a>
+                </li>
+                <li>
+                    <a href="#recursos">recursos</a>
+                </li>
+                <li>
+                    <a href="#">fale conosco</a>
+                </li>
+                <li>
+                    <a href="#">sobre</a>
+                </li>
+                <li>
+                    <a href="#">contrate-nos</a>
+                </li>
+                <!--agora vamos ter q criar o btn q esconde tudo-->
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="destaques" id="destaques">
+            <div class="container">
+                <!-- re-usando container -->
+                 <div class="texto">
+                    <h1>sustentar</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat assumenda explicabo odit magni nisi labore, quod quam nemo, est voluptas iusto necessitatibus. Nobis quasi neque assumenda ut autem dolorum doloremque?</p>
+                    <a href="" class="botao">explorar</a>
+                 </div>
+
+                 <div class="imagem">
+                    <img src="./logo_eco.png" alt="">
+                 </div>
+
+            </div>
+
+        </section>
+        <section class="recursos" id="recursos">
+            <h2>nossa diferença</h2>
+
+            <div class="container">
+                <div class="card">
+                    <div class="icone">icone1</div>
+                    <h3>materiais</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat assumenda</p>
+                </div>
+                <div class="card">
+                    <div class="icone">icone1</div>
+                    <h3>materiais</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat assumenda</p>
+                </div>
+                <div class="card">
+                    <div class="icone">icone1</div>
+                    <h3>materiais</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat assumenda</p>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>nossa diferença</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et id beatae sint numquam ut aut odio eveniet consequuntur aspernatur assumenda.</p>
+            <a href="" class="botao">comprar agora</a>
+        </section>
+
+    </main>
+</body>
+<script>
+    let btnMenu = document.querySelector(".botao-menu");
+    let menu = document.querySelector(".menu");
+    
+    btnMenu.addEventListener('click', () => {
+        menu.classList.toggle('ativo');
+    })
+</script>
+</html>
